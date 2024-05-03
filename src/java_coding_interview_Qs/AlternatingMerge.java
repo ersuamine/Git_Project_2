@@ -1,7 +1,23 @@
 package java_coding_interview_Qs;
 
 public class AlternatingMerge {
-}
+
+        public static void main(String[] args) {
+            mergeStrings("abc", "pqr");
+        }
+
+        private static void mergeStrings(String one, String two) {
+            String result = "";
+            for (int i = 0; i < one.length() | i < two.length(); i++) {
+                if (i < one.length())
+                    result += one.charAt(i);
+                if (i < two.length())
+                    result += two.charAt(i);
+            }
+            System.out.println(result);
+        }
+    }
+
 /*
 You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
 
