@@ -3,13 +3,13 @@ package java_coding_interview_Qs;
 public class Fibonacci {
     public static void main(String[] args) {
 
-
+        // n is nth term, firstnum is the first term, secondnum is the second term
         int n = 20, firstnum = 1, secondnum = 1;
         System.out.println("Fibonacci number\n" + n + " times :");
-
+        //iterate from 1st term to nth term
         for (int i = 1; i <= n; ++i) {
             System.out.print(firstnum + ", ");
-
+            //nextnum is the next term
             int nextnum = firstnum + secondnum;
             firstnum = secondnum;
             secondnum = nextnum;
